@@ -1,0 +1,19 @@
+/* src/components/NavBar.css */
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #fff;
+    margin-bottom: 10px;
+  }
+  .logo {
+    font-size: 35px;
+    margin-left: 45%;
+    font-weight: bold;
+  }
+  .nav-icons a {
+    margin: 0 10px;
+    font-size: 35px;
+    color: #000;
+  }
+  

@@ -1,70 +1,48 @@
-# Getting Started with Create React App
+# Furrl_Mobile_UI
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is a React.js implementation of Furrl's HomeHunts mobile website page, built to meet the specific requirements of your Furrl assignment.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- **Mobile-first Design**: Optimized for responsive viewing on mobile devices.
+- **Top Navbar**:
+  - Wishlist button redirects to Furrl Wishlist (URL provided by Furrl).
+  - Cart button redirects to Furrl Cart.
+- **Product List**:
+  - Infinite scroll for seamless product loading as the user scrolls down.
+  - Each product entry leads to the corresponding product details page.
+  - Generic share button for product links (customizable).
+- **API Integration**:
+  - Utilizes Furrl's production API (endpoints to be identified from network inspection).
+  - No External Libraries: Strictly adheres to the assignment's constraint, implementing infinite scroll without third-party libraries.
 
-### `npm start`
+## Prerequisites
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- Node.js and npm (or yarn) installed.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Running the Application
 
-### `npm test`
+### Clone the Repository
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```bash
+git clone https://github.com/<your-username>/furrl_mobile_ui.git
+cd furrl_mobile_ui
+```
+###Install Dependencies
+bash
+`npm install axios`  # Include Axios for HTTP requests
 
-### `npm run build`
+###Start the Development Server
+bash
+`npm start `  #This will launch the application in your default browser, accessible on a mobile    device or emulated mobile view in your browser.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+###API Integration
+Fetching product data (list).
+Fetching product details (individual product page).
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+###Replace Placeholders
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+  headers: {
+    Authorization: `YOUR_ACCESS_TOKEN`,
+    'Device-Id': `YOUR_DEVICE_ID`
+  }
