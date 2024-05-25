@@ -25,7 +25,7 @@ This project is a React.js implementation of Furrl's HomeHunts mobile website pa
 ### Clone the Repository
 
 ```bash
-git clone https://github.com/<your-username>/furrl_mobile_ui.git
+git clone https://github.com/varuag20/furrl_mobile_ui.git
 cd furrl_mobile_ui
 ```
 ###Install Dependencies
